@@ -10,7 +10,7 @@
     <p>Inserisci la giusta lunghezza</p>
     <form action="password.php" >
         <input type="text" name="lenght" placeholder="lunghezza password">
-        <button type="submit">Invia</button>
+         <button type="submit">Invia</button>
     </form>
 </body>
 </html>
