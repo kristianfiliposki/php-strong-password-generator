@@ -1,0 +1,29 @@
+#container{
+    background-color: lightskyblue;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+#password{
+    font-size: 3em;
+    text-align: center;
+    margin-top: 1rem;
+}
+#lenght{
+    text-align: center;
+}
+.box{
+    background-color: grey;
+    min-height: 30%;
+    min-width: 50%;
+    border: 2px solid black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}

@@ -1,3 +1,8 @@
+<!-- style -->
+<style>
+<?php include './style.css'; ?>
+</style>
+<!-- contenuto -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +11,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Crea la tua password </h1>
-    <p>Inserisci la giusta lunghezza</p>
-    <form action="password.php" >
-        <input type="text" name="lenght" placeholder="lunghezza password">
-         <button type="submit">Invia</button>
-    </form>
+    <div id="container">
+        <div>
+            <div>
+                <h1 id="titolo">Crea la tua password </h1>
+            </div>
+            <div>
+                <p>Inserisci la giusta lunghezza</p>
+            </div>
+            <div>
+                <form action="password.php" >
+                    <input type="text" name="lenght" placeholder="lunghezza password">
+                     <button type="submit">Invia</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>

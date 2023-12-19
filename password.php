@@ -1,17 +1,13 @@
-    <?php 
-       
-       $password = $_GET["lenght"];
-        $simboli = [ 
-        "minuscole" => "abcdefghijklmnopqrstuvwxyz",
-        "maiuscole" => "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-        "numeri" => '1234567890',
-        "caratteri_speciali" => '!?~@#-_+<>[]{}',
-        ];
-        $caratteri = $simboli["minuscole"] . $simboli["maiuscole"] . $simboli["numeri"] . $simboli["caratteri_speciali"];
-        $simboli_lunghezza = strlen($caratteri) - 1; 
+<?php 
 
+include 'dates.php'
 
-    ?>
+?>
+<style>
+<?php 
+include'./style.css';
+?>
+</style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,17 +16,26 @@
     <title>Document</title>
 </head>
 <body>
-    <div><?php echo $password ?></div>
-    <div>
-        <?php 
-            function gen ($caratteri, $simboli_lunghezza ,$lenght){
-                for ($i=0; $i <= $password ; $i++) { 
-                    $posizione = rand(0,$simboli_lunghezza);
-                    echo $caratteri[$posizione];
-                }
-            }
-            echo gen($caratteri,$simboli_lunghezza,$password)
-            ?>
+    <div id="container">
+        <div class="box">
+            <div id="lenght">la tua password è lunga : <?php echo $password ?></div>
+            <div id="password">
+                <?php 
+                        for ($i=1; $i <= $password ; $i++) { 
+                            $posizione = rand(0,$simboli_lunghezza);
+                            $carattere = $caratteri[$posizione];
+                            array_push($arreyPass,$carattere);
+
+                        };
+                        
+                        echo "la password é: " ;
+                        
+                        foreach ($arreyPass as $element) {
+                            echo $element;
+                        }; 
+                    ?>
+            </div>
+        </div>
     </div>
     <a href="form.php"></a>
 </body>
