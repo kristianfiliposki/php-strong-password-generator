@@ -1,8 +1,4 @@
-<?php 
-
-include 'dates.php'
-
-?>
+<?php include 'dates.php'?>
 <style>
 <?php 
 include'./style.css';
@@ -21,6 +17,7 @@ include'./style.css';
             <div id="lenght">la tua password è lunga : <?php echo $password ?></div>
             <div id="password">
                 <?php 
+                
                         for ($i=1; $i <= $password ; $i++) { 
                             $posizione = rand(0,$simboli_lunghezza);
                             $carattere = $caratteri[$posizione];

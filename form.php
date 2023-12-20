@@ -2,6 +2,9 @@
 <style>
 <?php include './style.css'; ?>
 </style>
+<script>
+    <?php include './script.js' ?>
+</script>
 <!-- contenuto -->
 <!DOCTYPE html>
 <html lang="en">
@@ -24,6 +27,36 @@
                     <input type="text" name="lenght" placeholder="lunghezza password">
                      <button type="submit">Invia</button>
                 </form>
+
+                    <div>
+                        <span>
+                            numeri
+                        </span>
+                        <input type="checkbox" id="numeri">
+                    </div>
+
+                    <div  >
+                        <span>
+                            caratteri
+                        </span>
+                        <input type="checkbox" id="caratteri">
+                    </div>
+
+                    <div>
+                        <span>
+                            maiuscole
+                        </span>
+                        <input type="checkbox" id="maiuscole">
+                    </div>
+
+                    <div>
+                        
+                        <span>
+                            minuscole
+                        </span>
+                        <input type="checkbox" id="minuscole">
+
+                    </div>
             </div>
         </div>
 

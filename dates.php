@@ -1,7 +1,7 @@
 <?php 
 
 
-$password = $_GET["lenght"];
+$password = ( $_GET["lenght"]);
 $simboli = [ 
     "minuscole" => "abcdefghijklmnopqrstuvwxyz",
     "maiuscole" => "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
