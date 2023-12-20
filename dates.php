@@ -1,7 +1,7 @@
 <?php 
 
 
-$password = ( $_GET["lenght"]);
+$lunghezza = ( $_GET["lenght"]);
 $simboli = [ 
     "minuscole" => "abcdefghijklmnopqrstuvwxyz",
     "maiuscole" => "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
@@ -10,6 +10,5 @@ $simboli = [
 ];
 $caratteri = $simboli["minuscole"] . $simboli["maiuscole"] . $simboli["numeri"] . $simboli["caratteri_speciali"];
 $simboli_lunghezza = strlen($caratteri) - 1; 
-$arreyPass= [];
 
 ?>

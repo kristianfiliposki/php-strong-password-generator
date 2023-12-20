@@ -1,5 +1,5 @@
-const NumberCheck=document.getElementById("numeri").addEventListener("click",function(){
-    NumberCheck.value=true;
+let num=document.getElementById("numeri");
+num.addEventListener("click",function(){
     console.log("ciao")
 
 });

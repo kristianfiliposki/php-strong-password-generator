@@ -24,7 +24,7 @@
             </div>
             <div>
                 <form action="password.php" >
-                    <input type="text" name="lenght" placeholder="lunghezza password">
+                    <input type="number" name="lenght" placeholder="lunghezza password">
                      <button type="submit">Invia</button>
                 </form>
 
